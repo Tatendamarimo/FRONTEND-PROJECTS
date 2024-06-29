@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+           <!-- navbar -->
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a href="../index.html" class="logo">Basket</a>
+            <i class="uil uil-times navCloseBtn"></i>
+            <ul class="nav-links">
+                <li class="dropdown"><a href="../index.html"" class="dropdown-btn">Home</a>
+                    <div class="dropdown-content">
+                        <a href="../index.html">Our Offers</a>
+                        <a href="../index.html#section3">Health Benefits</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../HTML/rising_desks.html" class="dropdown-btn">Rising Desks</a>
+                    <div class="dropdown-content">
+                        <a href="../HTML/rising_desks.html#laptop-desks">Desk for Laptops</a>
+                        <a href="../HTML/rising_desks.html#standing-desks">Floor Standing Desks</a>
+                    </div>
+                </li>
+                <li><a href="../HTML/health_benefits.html">Health Benefits</a></li>
+                <li><a href="../HTML/contact.html">Contact Us</a></li>
+                <li><a href="HTML/basket.html"><i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <div class="search-box">
+                <input type="text" placeholder="Search here...">
+            </div>
+        </nav>
+    </header>
+    <main>
+           <!-- Checkout -->
+        <h1 class="page-title">Checkout</h1>
+        <section id="basket" class="product-section">
+            <h2 class="section-title">Your Order</h2>
+            <div class="product-container">
+                <div class="product-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                       <tbody>
+    <tr>
+        <td>
+            <div class="product-info1">
+                <img src="../images/image1.png" alt="Desk for Laptops">
+                <h2>Portable  Desk</h2>
+            </div>
+        </td>
+        <td>$199.99</td>
+        <td><input type="number" class="quantity-input" name="quantity" min="1" value="2"></td>
+        <td>$399.98</td>
+        <td><button class="remove-btn">Remove</button></td>
+    </tr>
+    <tr>
+        <td>
+            <div class="product-info1">
+                <img src="../images/image6.jpg" alt="Floor Standing Desk">
+                <h2>L-shaped Desk</h2>
+            </div>
+        </td>
+        <td>$229.99</td>
+        <td><input type="number" class="quantity-input" name="quantity" min="1" value="1"></td>
+        <td>$229.99</td>
+        <td><button class="remove-btn">Remove</button></td>
+    </tr>
+    <tr>
+        <td>
+            <div class="product-info1">
+                <img src="../images/image7.jpg" alt="Floor Standing Desk">
+                <h2>Ergonomic Desk</h2>
+            </div>
+        </td>
+        <td>$229.99</td>
+        <td><input type="number" class="quantity-input" name="quantity" min="1" value="1"></td>
+        <td>$229.99</td>
+        <td><button class="remove-btn">Remove</button></td>
+    </tr>
+</tbody>
+<tfoot>
+                            <tr>
+                                <td colspan="3">Total</td>
+                                <td>$859.96</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="checkout-btn-container">
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-options">
+            
+                   <!-- Checkout Option -->
+                <h2 class="section-title">Select Checkout Option</h2>
+                <div class="options">
+                    <label for="shipping">
+                        <input type="radio" id="shipping" name="checkout-option" value="shipping" checked>
+                        <span>Ship to Address</span>
+                    </label>
+                    <label for="pickup">
+                        <input type="radio" id="pickup" name="checkout-option" value="pickup">
+                        <span>Pick Up In Store</span>
+                    </label>
+                </div>
+            </div>
+            
+                   <!-- Checkout form -->
+            <div class="checkout-form">
+                <h2 class="section-title">Shipping Information</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Shipping Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment">Payment Method:</label>
+                        <select id="payment" name="payment" required>
+                          <option value="" disabled selected>Select Payment Method</option>
+                            <option value="credit">InnBucks</option>
+                            <option value="credit">Cash (ZiG)</option>
+                            <option value="credit">Ecocash</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="checkout-btn">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+           <!-- footers -->
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://whatsapp.com/" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 Standing Desks Ltd.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ee10f98edd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
